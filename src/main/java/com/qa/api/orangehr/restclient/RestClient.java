@@ -1,5 +1,6 @@
 package com.qa.api.orangehr.restclient;
 
+import java.util.HashMap;
 import java.util.Map;
 import com.qa.api.orangehr.util.TestUtil;
 import io.restassured.RestAssured;
@@ -13,10 +14,6 @@ public class RestClient {
 		    throw new IllegalStateException("Utility class");
 		  }
 
-	
-	static String username;
-	static String password;
-	
 	// HTTP Methods : GET POST PUT DELETE
     /**
      * 
@@ -49,12 +46,13 @@ public class RestClient {
 	 */
 	
 	public static Response doPost(String contentType,String accessToken ,String baseURI, String basePath,
-			Map<String, String> paramsMap, boolean log, Object obj) {
+			Map<String, String> paramsMap, boolean log, Object obj, String postType) {
 
 		setBaseURI(baseURI);
 		RequestSpecification request = createRequest(contentType,accessToken,paramsMap, log);
-		addRequestPayload(request, obj);
-		return getResponse("POST", request, basePath);
+		if(obj != null){
+		addRequestPayload(request, obj);}
+		return getResponse(postType, request, basePath);
 		
 	}
 	
@@ -83,7 +81,7 @@ public class RestClient {
 		
 		
 		if (!(paramsMap == null)) {
-			request.queryParams(paramsMap);
+			request.params(paramsMap);
 		}
 
 		if (contentType.equalsIgnoreCase("JSON")) {
@@ -115,7 +113,11 @@ public class RestClient {
 			
 		case "POST":
 			response = request.post(basePath);
-			break;	
+			break;
+		
+		case "PATCH":
+			response = request.patch(basePath);
+			break;		
         
 		case "PUT":
 			response = request.put(basePath);
@@ -130,6 +132,5 @@ public class RestClient {
 		}
 	    return response;	
 	}
-
 
 }

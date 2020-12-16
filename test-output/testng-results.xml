@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8717" started-at="2020-12-16T20:40:38Z" finished-at="2020-12-16T20:40:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8717" started-at="2020-12-16T20:40:38Z" finished-at="2020-12-16T20:40:47Z">
+      <class name="com.qa.api.orangehr.tests.Admin">
+        <test-method status="PASS" signature="employmentStatusCheck()[pri:0, instance:com.qa.api.orangehr.tests.Admin@457e2f02]" name="employmentStatusCheck" duration-ms="3260" started-at="2020-12-16T20:40:38Z" finished-at="2020-12-16T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employmentStatusCheck -->
+        <test-method status="PASS" signature="getemploymentStatusCheck()[pri:0, instance:com.qa.api.orangehr.tests.Admin@457e2f02]" name="getemploymentStatusCheck" duration-ms="2115" started-at="2020-12-16T20:40:41Z" finished-at="2020-12-16T20:40:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getemploymentStatusCheck -->
+        <test-method status="PASS" signature="updateEmployeeStatusUpdate()[pri:0, instance:com.qa.api.orangehr.tests.Admin@457e2f02]" name="updateEmployeeStatusUpdate" duration-ms="3315" started-at="2020-12-16T20:40:43Z" finished-at="2020-12-16T20:40:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeStatusUpdate -->
+      </class> <!-- com.qa.api.orangehr.tests.Admin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

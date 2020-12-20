@@ -15,7 +15,7 @@ public class AccessToken {
 	@Test
 	public void getAccessTokenTest(){
 		Response response = testutil.getAccessToken();
-		String accessToken = response.path("access_token").toString();
+		String accessToken = response.jsonPath().get("access_token");
 		PropertyCache.setProperty("data.properties","access_token" , accessToken);
 		Assert.assertEquals(response.statusCode(), 200);
 		Assert.assertEquals(response.path("token_type"), "Bearer");

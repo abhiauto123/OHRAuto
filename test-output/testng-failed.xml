@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.api.orangehr.tests.Admin">
         <methods>
-          <include name="updateEmployeeStatusUpdate"/>
+          <include name="deleteJobTitlesCheck"/>
         </methods>
       </class> <!-- com.qa.api.orangehr.tests.Admin -->
     </classes>

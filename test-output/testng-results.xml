@@ -1,24 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8717" started-at="2020-12-16T20:40:38Z" finished-at="2020-12-16T20:40:47Z">
+  <suite name="Default suite" duration-ms="36135" started-at="2020-12-20T18:53:42Z" finished-at="2020-12-20T18:54:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8717" started-at="2020-12-16T20:40:38Z" finished-at="2020-12-16T20:40:47Z">
+    <test name="Default test" duration-ms="36135" started-at="2020-12-20T18:53:42Z" finished-at="2020-12-20T18:54:18Z">
       <class name="com.qa.api.orangehr.tests.Admin">
-        <test-method status="PASS" signature="employmentStatusCheck()[pri:0, instance:com.qa.api.orangehr.tests.Admin@457e2f02]" name="employmentStatusCheck" duration-ms="3260" started-at="2020-12-16T20:40:38Z" finished-at="2020-12-16T20:40:41Z">
+        <test-method status="PASS" signature="employmentStatusCheck()[pri:1, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="employmentStatusCheck" duration-ms="3844" started-at="2020-12-20T18:53:42Z" finished-at="2020-12-20T18:53:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- employmentStatusCheck -->
-        <test-method status="PASS" signature="getemploymentStatusCheck()[pri:0, instance:com.qa.api.orangehr.tests.Admin@457e2f02]" name="getemploymentStatusCheck" duration-ms="2115" started-at="2020-12-16T20:40:41Z" finished-at="2020-12-16T20:40:43Z">
+        <test-method status="PASS" signature="getemploymentStatusCheck()[pri:2, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="getemploymentStatusCheck" duration-ms="2155" started-at="2020-12-20T18:53:45Z" finished-at="2020-12-20T18:53:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getemploymentStatusCheck -->
-        <test-method status="PASS" signature="updateEmployeeStatusUpdate()[pri:0, instance:com.qa.api.orangehr.tests.Admin@457e2f02]" name="updateEmployeeStatusUpdate" duration-ms="3315" started-at="2020-12-16T20:40:43Z" finished-at="2020-12-16T20:40:47Z">
+        <test-method status="PASS" signature="updateEmployeeStatusCheck()[pri:3, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="updateEmployeeStatusCheck" duration-ms="3084" started-at="2020-12-20T18:53:48Z" finished-at="2020-12-20T18:53:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateEmployeeStatusUpdate -->
+        </test-method> <!-- updateEmployeeStatusCheck -->
+        <test-method status="PASS" signature="deleteEmployeeStatusCheck()[pri:4, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="deleteEmployeeStatusCheck" duration-ms="4759" started-at="2020-12-20T18:53:51Z" finished-at="2020-12-20T18:53:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployeeStatusCheck -->
+        <test-method status="PASS" signature="addJobCategoryCheck()[pri:5, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="addJobCategoryCheck" duration-ms="1562" started-at="2020-12-20T18:53:55Z" finished-at="2020-12-20T18:53:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addJobCategoryCheck -->
+        <test-method status="PASS" signature="getJobCategoryCheck()[pri:6, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="getJobCategoryCheck" duration-ms="1570" started-at="2020-12-20T18:53:57Z" finished-at="2020-12-20T18:53:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getJobCategoryCheck -->
+        <test-method status="PASS" signature="updateJobCategoryCheck()[pri:7, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="updateJobCategoryCheck" duration-ms="3151" started-at="2020-12-20T18:53:59Z" finished-at="2020-12-20T18:54:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateJobCategoryCheck -->
+        <test-method status="PASS" signature="deleteJobCategoryCheck()[pri:8, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="deleteJobCategoryCheck" duration-ms="4723" started-at="2020-12-20T18:54:02Z" finished-at="2020-12-20T18:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteJobCategoryCheck -->
+        <test-method status="PASS" signature="addJobTitlesCheck()[pri:9, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="addJobTitlesCheck" duration-ms="1580" started-at="2020-12-20T18:54:06Z" finished-at="2020-12-20T18:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addJobTitlesCheck -->
+        <test-method status="PASS" signature="getJobTitlesCheck()[pri:10, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="getJobTitlesCheck" duration-ms="1563" started-at="2020-12-20T18:54:08Z" finished-at="2020-12-20T18:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getJobTitlesCheck -->
+        <test-method status="PASS" signature="updateJobTitlesCheck()[pri:11, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="updateJobTitlesCheck" duration-ms="3313" started-at="2020-12-20T18:54:10Z" finished-at="2020-12-20T18:54:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateJobTitlesCheck -->
+        <test-method status="PASS" signature="deleteJobTitlesCheck()[pri:12, instance:com.qa.api.orangehr.tests.Admin@5c7fa833]" name="deleteJobTitlesCheck" duration-ms="4789" started-at="2020-12-20T18:54:13Z" finished-at="2020-12-20T18:54:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteJobTitlesCheck -->
       </class> <!-- com.qa.api.orangehr.tests.Admin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

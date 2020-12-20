@@ -27,7 +27,6 @@ public class RestClient {
      */
 	public static Response doGet(String contentType,String accessToken ,String baseURI, String basePath,
 			Map<String, String> paramsMap, boolean log) {
-
 		setBaseURI(baseURI);
 		RequestSpecification request = createRequest(contentType,accessToken,paramsMap, log);
 		return getResponse("GET", request, basePath);	 
@@ -124,7 +123,7 @@ public class RestClient {
 			break;
 			
 		case "DELETE":
-			response = request.put(basePath);
+			response = request.delete(basePath);
 			break;		
 		default:
 			System.out.println("Please provide valid http method..!");

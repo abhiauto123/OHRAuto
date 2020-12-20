@@ -4,6 +4,7 @@ import java.util.Properties;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class TestUtil {
@@ -37,7 +38,9 @@ public class TestUtil {
 				.formParam("grant_type", p.getProperty("grant_type")).formParam("username", p.getProperty("username"))
 				.formParam("password", p.getProperty("password"))
 				.post(p.getProperty("baseURI") + p.getProperty("authEndPoint"));
-
 	}
-
+	
+	public static JsonPath getJsonPathObjectfromResponse(Response response){
+		return new JsonPath(response.asString());		
+	}
 }
